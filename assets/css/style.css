@@ -7,12 +7,12 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: 'Montserrat', sans-serif;
-    color: #ba55b7;
+    color: #e3a4ff;
 }
 
 *::selection {
     background-color: #cf6acb;
-    color: #B026FF;
+    color: #3f26ff;
 }
 
 .tooltip {
@@ -20,20 +20,20 @@
 }
 
 .tooltip:before {
-content: attr(data-tooltip);
-position: absolute;
-top: -25px;
-left: 0;
-background-color: #333;
-color: #fff;
-padding: 5px;
-border-radius: 3px;
-opacity: 0;
-transition: opacity 0.3s ease;
+    content: attr(data-tooltip);
+    position: absolute;
+    top: -25px;
+    left: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .tooltip:hover:before {
-opacity: 1;
+    opacity: 1;
 }
 
 /* --------------------------------------------------------------- */
@@ -41,13 +41,13 @@ opacity: 1;
 html, body {
     height: 100vh;
     width: 100%;
-    background-color: #7b157a;
+    background-color: #1808f9;
 }
 
 header {
     height: 5rem;
     width: 100%;
-    background-color: #902a8e;
+    background-color: #000050;
 
     display: flex;
     justify-content: center;
@@ -67,7 +67,7 @@ main {
 
 /* --------------------------------------------------------------- */
 
-.box-ia-grid {  
+.box-study-grid {  
     display: grid;
     grid-gap: 3rem;
     /* grid-template-columns: 
@@ -79,9 +79,9 @@ main {
 
 .card-content {
 	border-radius: 15px;
-    background: linear-gradient(145deg, #841683, #6f136e);
-    box-shadow:  5px 5px 17px #310831,
-                -5px -5px 17px #c522c3;
+    background: #1808f9;
+    box-shadow:  5px 5px 17px #0b0473,
+                -5px -5px 17px #250cff;
 	padding: 1.25rem;
     min-height: 16rem;
     min-width: 16rem;
