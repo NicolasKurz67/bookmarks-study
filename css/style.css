@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+*::selection {
+    background-color: hsl(228, 45%, 44%);;
+    color: white;
+}
+
+.tooltip {
+    position: relative;
+}
+
+.tooltip:before {
+content: attr(data-tooltip);
+position: absolute;
+top: -25px;
+left: 0;
+background-color: #333;
+color: #fff;
+padding: 5px;
+border-radius: 3px;
+opacity: 0;
+transition: opacity 0.3s ease;
+}
+
+.tooltip:hover:before {
+opacity: 1;
+}
+
+/* --------------------------------------------------------------- */
+
+html, body {
+    height: 100vh;
+    width: 100%;
+    background-color: #d3dcec;
+}
+
+header {
+    height: 5rem;
+    width: 100%;
+    background-color: blueviolet;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header > h1 {
+    letter-spacing: .5rem;
+}
+
+main {
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* --------------------------------------------------------------- */
+
+.box-ia-grid {  
+    display: grid;
+    grid-gap: 2rem;
+    /* grid-template-columns: 
+        repeat(auto-fit, minmax(200px, 1fr)); */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-flow: row;
+}
+
+.card-content {
+	background-color: #c3c3c3;
+	border-radius: 15px;
+    box-shadow:  6px 6px 12px #a3a3a3, -6px -6px 12px #e3e3e3;
+	padding: 1.25rem;
+    min-height: 16rem;
+    min-width: 16rem;
+    max-height: 100%;
+    max-width: 100%;
+    cursor: pointer;
+    transform: scale(1);
+    transition: 0.2s ease-in;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: large;
+    font-weight: 600;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-content:hover {
+    transform: scale(1.015);
+    transition: 0.2s ease-in;
+}
