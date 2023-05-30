@@ -7,12 +7,12 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: 'Montserrat', sans-serif;
-    color: black;
+    color: #ba55b7;
 }
 
 *::selection {
-    background-color: hsl(228, 45%, 44%);;
-    color: white;
+    background-color: #cf6acb;
+    color: #B026FF;
 }
 
 .tooltip {
@@ -41,13 +41,13 @@ opacity: 1;
 html, body {
     height: 100vh;
     width: 100%;
-    background-color: #d3dcec;
+    background-color: #7b157a;
 }
 
 header {
     height: 5rem;
     width: 100%;
-    background-color: blueviolet;
+    background-color: #902a8e;
 
     display: flex;
     justify-content: center;
@@ -59,7 +59,7 @@ header > h1 {
 }
 
 main {
-    padding: 5rem;
+    padding: 3rem 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -69,7 +69,7 @@ main {
 
 .box-ia-grid {  
     display: grid;
-    grid-gap: 2rem;
+    grid-gap: 3rem;
     /* grid-template-columns: 
         repeat(auto-fit, minmax(200px, 1fr)); */
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -78,9 +78,10 @@ main {
 }
 
 .card-content {
-	background-color: #c3c3c3;
 	border-radius: 15px;
-    box-shadow:  6px 6px 12px #a3a3a3, -6px -6px 12px #e3e3e3;
+    background: linear-gradient(145deg, #841683, #6f136e);
+    box-shadow:  5px 5px 17px #310831,
+                -5px -5px 17px #c522c3;
 	padding: 1.25rem;
     min-height: 16rem;
     min-width: 16rem;
